@@ -15,6 +15,7 @@ body {
 #container {
     width: 960px; 
     margin: 0 auto;
+    
 }
 
 #content {
@@ -46,70 +47,6 @@ body {
         #footer p#back-top {
             font-size: 12px; float: right; margin: 0 30px 0 0;
         }
-        
-        ::selection {
-            background: purple;
-        }
-        
-        #logoandnav {
-            background-color: #0b0f0c;
-            height: 112px;
-            margin-top: 0px;
-            line-height: 112px;
-        }
-        #logoandnav:before {
-            width: 100%;
-            height: inherit;
-            display: block;
-            position: absolute;
-            content:"";
-            left: 0;
-            z-index: -1;
-            background-color: inherit;
-        }
-        
-         #mainlogodiv {
-            float: none;
-            line-height: 112px;
-            display: inline-block;
-        }
-        #mainlogo {
-            vertical-align: middle;
-        }
-        
-         nav {
-            float: none;
-            display: inline-block;
-            height: 112px;
-            line-height: 112px;
-        }
-
-        ul.navlist li {
-            height: 112px;
-            list-style-type: none;
-            display: inline-block;
-        }
-
-        ul.navlist {
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-        
-        a.navigation:link, a.navigation:visited {
-            font-family:'Roboto', sans-serif;
-            font-size: 1.2rem;
-            color: white;
-            padding: 15px;
-            text-transform: uppercase;
-            text-decoration: none;
-            height: 112px;
-            transition: all 0.2s;
-        }
-        a.navigation:hover, a.navigation:active {
-            color: black;
-            background-color: purple;
-        }
-
 
 * {
 	margin:0;
@@ -239,3 +176,10 @@ fieldset {
     padding: 10px;
   }
   
+  @media (min-width: 600px) {
+
+}
+
+[class*="col-"] {
+    width: 100%;
+  }
